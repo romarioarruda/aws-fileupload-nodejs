@@ -21,7 +21,7 @@ app.use(
 
 app.get('/', async (req, resp) => {
     const images = await ImageUpload.find()
-
+        
     return resp.json(images)
 })
 

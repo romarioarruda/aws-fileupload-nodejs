@@ -24,7 +24,6 @@ ImageSchema.pre('save', function () {
 })
 
 ImageSchema.pre('remove', function () {
-    console.log('CHAVE URL: ', this)
     if (process.env.STORAGE_TYPE === 's3') {
         return s3.deleteObject({
             Bucket: process.env.BUCKET_NAME,

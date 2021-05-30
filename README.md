@@ -28,7 +28,7 @@ $ npm start
 ```
 
 Open in
-`http://localhost:3000/`
+`GET: http://localhost:3000/`
 
 Add new file
 `POST: http://localhost:3000/upload`
